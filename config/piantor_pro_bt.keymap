@@ -33,6 +33,13 @@
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kt LEFT_ALT>;
             label = "E_ACUTE";
         };
+
+        I_GRAVE: I_GRAVE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_4 &kt LEFT_ALT>;
+            label = "I_GRAVE";
+        };
     };
 
     keymap {
