@@ -87,10 +87,10 @@
             >;
         };
 
-        extra_layer_2 {
-            display-name = "EXTRA 2";
+        DX_4 {
+            display-name = "DX_4";
             bindings = <
-&trans  &trans  &trans  &kp E  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp A  &kp S  &kp D  &kp F  &kp G  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp Z  &kp X  &kp C  &kp V  &kp B  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp E  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp A  &kp S  &kp D  &kp F  &kp G  &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &trans  &kp Z  &kp X  &kp C  &kp V  &kp B  &trans  &trans  &kp LEFT  &kp DOWN_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
