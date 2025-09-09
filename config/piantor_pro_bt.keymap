@@ -23,7 +23,7 @@
         E_GRAVE: E_GRAVE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_9 &kp KP_NUMBER_2 &kt LEFT_ALT>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_0 &kt LEFT_ALT>;
             label = "E_GRAVE";
         };
     };
@@ -69,7 +69,7 @@
             //                    | GUI |     | SPC | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC  &trans  &A_GRAVE  &trans  &trans  &trans  &trans  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE  &trans  &trans  &trans  &trans  &trans  &trans  &kp UNDER  &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE  &trans  &trans  &trans  &kp RET  &trans  &kp RALT
+&trans  &kp Q  &trans  &E_GRAVE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &A_GRAVE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &lt 5 DELETE  &lt 4 SPACE  &trans  &trans  &trans  &trans
             >;
         };
 
