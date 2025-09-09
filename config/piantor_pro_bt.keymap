@@ -26,6 +26,13 @@
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_0 &kt LEFT_ALT>;
             label = "E_GRAVE";
         };
+
+        E_ACUTE: E_ACUTE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kt LEFT_ALT>;
+            label = "E_ACUTE";
+        };
     };
 
     keymap {
@@ -69,14 +76,14 @@
             //                    | GUI |     | SPC | ENT |     | ALT |
 
             bindings = <
-&trans  &kp Q  &trans  &E_GRAVE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &A_GRAVE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &lt 5 DELETE  &lt 4 SPACE  &trans  &trans  &trans  &trans
+&kp LALT  &kp Q  &trans  &E_GRAVE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LCTRL  &A_GRAVE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LSHFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &lt 5 DELETE  &lt 4 SPACE  &mo 6  &trans  &trans  &trans
             >;
         };
 
-        extra_layer_1 {
-            display-name = "EXTRA 1";
+        SX_3 {
+            display-name = "SX_3";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &E_ACUTE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_0  &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
