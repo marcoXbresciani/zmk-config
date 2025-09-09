@@ -12,6 +12,22 @@
 };
 
 / {
+    macros {
+        A_GRAVE: A_ACCENTO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_9 &kp KP_NUMBER_2 &kt LEFT_ALT>;
+            label = "A_ACCENTO";
+        };
+
+        E_GRAVE: E_GRAVE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_9 &kp KP_NUMBER_2 &kt LEFT_ALT>;
+            label = "E_GRAVE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -39,12 +55,12 @@
             //                    | GUI |     | SPC   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &kp RA(SEMI)  &trans  &kp LEFT_BRACKET  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp TAB  &kp SINGLE_QUOTE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp GRAVE  &kp NUBS  &trans  &trans  &trans
+&kp ESCAPE  &kp RA(SEMI)  &trans  &kp LEFT_BRACKET  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp TAB  &kp SINGLE_QUOTE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp CAPSLOCK  &kp GRAVE  &kp NUBS  &trans  &trans  &trans
             >;
         };
 
-        raise_layer {
-            display-name = "SYMBOL";
+        SX_2 {
+            display-name = "SX_2";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |  ^  |  &  |  *  |  (  |  )  | BSPC |
@@ -53,7 +69,7 @@
             //                    | GUI |     | SPC | ENT |     | ALT |
 
             bindings = <
-&kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC  &kp LCTRL  &trans  &trans  &trans  &trans  &trans  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE  &kp LSHFT  &trans  &trans  &trans  &trans  &trans  &kp UNDER  &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE  &kp LGUI  &trans  &kp SPACE  &kp RET  &trans  &kp RALT
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC  &trans  &A_GRAVE  &trans  &trans  &trans  &trans  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE  &trans  &trans  &trans  &trans  &trans  &trans  &kp UNDER  &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE  &trans  &trans  &trans  &kp RET  &trans  &kp RALT
             >;
         };
 
