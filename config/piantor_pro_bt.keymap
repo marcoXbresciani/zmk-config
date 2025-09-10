@@ -145,7 +145,7 @@
         FRECCE {
             display-name = "FRECCE";
             bindings = <
-&trans  &trans  &trans  &kp E  &trans  &trans  &trans  &kp NUHS  &kp EQUAL  &kp SEMICOLON  &trans  &trans  &trans  &kp A  &kp S  &kp D  &kp F  &kp G  &trans  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &trans  &trans  &kp Z  &kp X  &kp C  &kp V  &kp B  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp E  &trans  &trans  &trans  &kp NUHS  &kp EQUAL  &kp SEMICOLON  &trans  &trans  &trans  &kp A  &kp S  &kp D  &kp F  &kp G  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp Z  &kp X  &kp C  &kp V  &kp B  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "FRECCE";
