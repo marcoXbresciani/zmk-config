@@ -13,21 +13,21 @@
 
 / {
     macros {
-        A_GRAVE: A_ACCENTO {
+        a_grave: A_ACCENTO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_9 &kp KP_NUMBER_2 &kt LEFT_ALT>;
             label = "A_ACCENTO";
         };
 
-        E_GRAVE: E_GRAVE {
+        e_grave: E_GRAVE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_0 &kt LEFT_ALT>;
             label = "E_GRAVE";
         };
 
-        E_ACUTE: E_ACUTE {
+        e_acute: E_ACUTE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kt LEFT_ALT>;
@@ -39,6 +39,41 @@
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_4 &kt LEFT_ALT>;
             label = "I_GRAVE";
+        };
+
+        o_grave: O_GRAVE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_0 &kt LEFT_ALT>;
+            label = "O_GRAVE";
+        };
+
+        u_grave: u_grave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_7 &kt LEFT_ALT>;
+            label = "U_GRAVE";
+        };
+
+        tilde: tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_6 &kt LEFT_ALT>;
+            label = "TILDE";
+        };
+
+        backtick: backtick {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kt LEFT_ALT>;
+            label = "BACKTICK";
+        };
+
+        emacs_tilde: emacs_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LCTRL &kp X &kp N8 &kt LCTRL &kp ENTER &kp T &kp I &kp L &kp D &kp E &kp ENTER>;
+            label = "EMACS_TILDE";
         };
     };
 
@@ -87,24 +122,26 @@
             //                    | GUI |     | SPC | ENT |     | ALT |
 
             bindings = <
-&kp LALT  &kp Q  &trans  &E_GRAVE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LCTRL  &A_GRAVE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LSHFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &lt 5 DELETE  &lt 4 SPACE  &mo 6  &trans  &trans  &trans
+&kp LALT  &kp Q  &trans  &e_grave  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LCTRL  &a_grave  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LSHFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &lt 5 DELETE  &lt 4 SPACE  &mo 6  &trans  &trans  &trans
             >;
         };
 
         NUMERI {
             display-name = "NUMERI";
             bindings = <
-&trans  &trans  &trans  &E_ACUTE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_0  &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &e_acute  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_0  &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "NUMERI";
         };
 
-        DX_4 {
-            display-name = "DX_4";
+        FRECCE {
+            display-name = "FRECCE";
             bindings = <
-&trans  &trans  &trans  &kp E  &trans  &trans  &trans  &kp NUHS  &kp EQUAL  &kp SEMICOLON  &trans  &trans  &trans  &kp A  &kp S  &kp D  &kp F  &kp G  &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &trans  &kp Z  &kp X  &kp C  &kp V  &kp B  &trans  &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP  &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp E  &trans  &trans  &trans  &kp NUHS  &kp EQUAL  &kp SEMICOLON  &trans  &trans  &trans  &kp A  &kp S  &kp D  &kp F  &kp G  &trans  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &trans  &trans  &kp Z  &kp X  &kp C  &kp V  &kp B  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            label = "FRECCE";
         };
 
         extra_layer_3 {
