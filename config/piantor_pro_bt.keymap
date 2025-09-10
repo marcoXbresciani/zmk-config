@@ -72,8 +72,15 @@
         emacs_tilde: emacs_tilde {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LCTRL &kp X &kp N8 &kt LCTRL &kp ENTER &kp T &kp I &kp L &kp D &kp E &kp ENTER>;
+            bindings = <&kp LC(X) &kp N8 &kp ENTER &kp T &kp I &kp L &kp D &kp E &kp ENTER>;
             label = "EMACS_TILDE";
+        };
+
+        emacs_backtick: emacs_grave_accent {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(X) &kp LC(N8) &kp ENTER &kp G &kp R &kp A &kp V &kp E &kp SPACE &kp A &kp C &kp C &kp E &kp N &kp T &kp ENTER>;
+            label = "EMACS_GRAVE_ACCENT";
         };
     };
 
