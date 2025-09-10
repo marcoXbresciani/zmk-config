@@ -13,74 +13,74 @@
 
 / {
     macros {
-        a_grave: A_ACCENTO {
+        a_grave: a_grave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_9 &kp KP_NUMBER_2 &kt LEFT_ALT>;
-            label = "A_ACCENTO";
+            label = "a_grave";
         };
 
-        e_grave: E_GRAVE {
+        e_grave: e_grave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_0 &kt LEFT_ALT>;
-            label = "E_GRAVE";
+            label = "e_grave";
         };
 
-        e_acute: E_ACUTE {
+        e_acute: e_acute {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kt LEFT_ALT>;
-            label = "E_ACUTE";
+            label = "e_acute";
         };
 
-        I_GRAVE: I_GRAVE {
+        i_grave: i_grave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_4 &kt LEFT_ALT>;
-            label = "I_GRAVE";
+            label = "i_grave";
         };
 
-        o_grave: O_GRAVE {
+        o_grave: o_grave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_0 &kt LEFT_ALT>;
-            label = "O_GRAVE";
+            label = "o_grave";
         };
 
         u_grave: u_grave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_7 &kt LEFT_ALT>;
-            label = "U_GRAVE";
+            label = "u_grave";
         };
 
         tilde: tilde {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_6 &kt LEFT_ALT>;
-            label = "TILDE";
+            label = "tilde";
         };
 
         backtick: backtick {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kt LEFT_ALT>;
-            label = "BACKTICK";
+            label = "backtick";
         };
 
         emacs_tilde: emacs_tilde {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(X) &kp N8 &kp ENTER &kp T &kp I &kp L &kp D &kp E &kp ENTER>;
-            label = "EMACS_TILDE";
+            label = "emacs_tilde";
         };
 
-        emacs_backtick: emacs_grave_accent {
+        emacs_backtick: emacs_backtick {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(X) &kp LC(N8) &kp ENTER &kp G &kp R &kp A &kp V &kp E &kp SPACE &kp A &kp C &kp C &kp E &kp N &kp T &kp ENTER>;
-            label = "EMACS_GRAVE_ACCENT";
+            label = "emacs_backtick";
         };
     };
 
@@ -154,7 +154,7 @@
         extra_layer_3 {
             display-name = "EXTRA 3";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &u_grave  &i_grave  &o_grave  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp J  &kp K  &kp L  &kp LS(LG(S))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
