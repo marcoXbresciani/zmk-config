@@ -154,14 +154,14 @@
         MAI_DX {
             display-name = "MAI_DX";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &u_grave  &i_grave  &o_grave  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp C_MUTE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &u_grave  &i_grave  &o_grave  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LG(K))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         extra_layer_4 {
             display-name = "EXTRA 4";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp U  &kp I  &kp O  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LG(S))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp U  &kp I  &kp O  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LG(S))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N  &kp M  &kp COMMA  &kp DOT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
