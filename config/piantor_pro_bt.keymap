@@ -97,14 +97,14 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp MINUS  &kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp LS(LG(S))  &kp RIGHT_BRACKET  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp PERIOD  &kp FSLH  &kp RIGHT_SHIFT  &lt 5 DELETE  &lt 4 SPACE  &mo 6  &mo 3  &lt 1 ENTER  &lt 2 BACKSPACE
+&kp LEFT_ALT  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp MINUS  &kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp LS(LG(S))  &kp RIGHT_BRACKET  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH  &kp RIGHT_SHIFT  &mo 6  &lt 5 DELETE  &lt 4 SPACE  &lt 1 ENTER  &lt 2 BACKSPACE  &mo 3
             >;
 
             label = "QWERTY";
         };
 
-        MIN_SX {
-            display-name = "MIN_SX";
+        SYM_SX {
+            display-name = "SYM_SX";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5    |  6  |  7  |  8  |  9  |  0  | BSPC |
@@ -113,13 +113,13 @@
             //                    | GUI |     | SPC   | ENT |     | ALT |
 
             bindings = <
-&kp LALT  &kp RA(SEMI)  &trans  &kp LEFT_BRACKET  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp TAB  &kp SINGLE_QUOTE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp INS  &kp GRAVE  &kp NUBS  &trans  &trans  &trans
+&kp ESCAPE  &kp RA(SEMI)  &trans  &kp RA(E)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp TAB  &kp RA(SINGLE_QUOTE)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp INS  &kp GRAVE  &kp NUBS  &trans  &trans  &trans
             >;
 
-            label = "MIN_SX";
+            label = "SYM_SX";
         };
 
-        MAI_SX {
+        MIN_SX {
             display-name = "MAI_SX";
 
             // -----------------------------------------------------------------------------------------
@@ -129,14 +129,16 @@
             //                    | GUI |     | SPC | ENT |     | ALT |
 
             bindings = <
-&kp LALT  &kp Q  &trans  &e_grave  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LCTRL  &a_grave  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LSHFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &lt 5 DELETE  &lt 4 SPACE  &mo 6  &trans  &trans  &trans
+&kp LALT  &kp Q  &trans  &kp LEFT_BRACKET  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LCTRL  &kp SINGLE_QUOTE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LSHFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &lt 5 DELETE  &lt 4 SPACE  &mo 6  &trans  &trans  &trans
             >;
+
+            label = "MIN_SX";
         };
 
         NUMERI {
             display-name = "NUMERI";
             bindings = <
-&trans  &trans  &trans  &e_acute  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_0  &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp E  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_0  &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "NUMERI";
@@ -154,7 +156,7 @@
         MAI_DX {
             display-name = "MAI_DX";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &u_grave  &i_grave  &o_grave  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LG(K))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F11  &kp F12  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
