@@ -129,7 +129,7 @@
             //                    | GUI |     | SPC | ENT |     | ALT |
 
             bindings = <
-&kp LALT  &kp Q  &trans  &kp LEFT_BRACKET  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LCTRL  &kp SINGLE_QUOTE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LSHFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &lt 5 DELETE  &lt 4 SPACE  &mo 6  &trans  &trans  &trans
+&kp LALT  &kp Q  &trans  &e_grave  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LCTRL  &a_grave  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LSHFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &lt 5 DELETE  &lt 4 SPACE  &mo 6  &trans  &trans  &trans
             >;
 
             label = "MIN_SX";
@@ -138,7 +138,7 @@
         NUMERI {
             display-name = "NUMERI";
             bindings = <
-&trans  &trans  &trans  &kp E  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_0  &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp E  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp A  &kp N6  &kp N7  &kp N8  &kp N9  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "NUMERI";
