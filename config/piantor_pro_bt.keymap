@@ -138,7 +138,7 @@
         NUMERI {
             display-name = "NUMERI";
             bindings = <
-&trans  &trans  &trans  &kp E  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp A  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N0  &kp NUMBER_1  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_6  &kp N7  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "NUMERI";
