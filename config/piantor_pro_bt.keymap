@@ -35,15 +35,15 @@
 #define MMUT     LG(LA(K))
 #define IME      LG(SPACE)
 
-/ {
-    // ── Layer-tap tuning ──────────────────────────────────────────────────────
-    // Match QMK LT(layer, kc) baseline timing and enable double-tap-hold repeat.
-    &lt {
-        tapping-term-ms = <200>;
-        quick-tap-ms = <200>;
-        require-prior-idle-ms = <150>;
-    };
+// ── Layer-tap tuning ──────────────────────────────────────────────────────
+// Match QMK LT(layer, kc) baseline timing and enable double-tap-hold repeat.
+&lt {
+    tapping-term-ms = <200>;
+    quick-tap-ms = <200>;
+    require-prior-idle-ms = <150>;
+};
 
+/ {
     behaviors {
         td_lshft: td_lshft {
             compatible = "zmk,behavior-tap-dance";
