@@ -158,7 +158,7 @@ static void draw_middle(lv_obj_t *widget, lv_color_t cbuf[], const struct status
         }
 
         char label[2];
-        snprintf(label, sizeof(label), "%d", i + 1);
+        snprintf(label, sizeof(label), "%d", i);
         lv_canvas_draw_text(canvas, circle_offsets[i][0] - 8, circle_offsets[i][1] - 10, 16,
                             (selected ? &label_dsc_black : &label_dsc), label);
     }
