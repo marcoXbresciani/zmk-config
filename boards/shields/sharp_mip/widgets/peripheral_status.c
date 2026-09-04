@@ -23,8 +23,13 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 #include "peripheral_status.h"
 
-LV_IMG_DECLARE(balloon);
-LV_IMG_DECLARE(mountain);
+LV_IMG_DECLARE(acquario_bow);
+LV_IMG_DECLARE(atlas_wob);
+LV_IMG_DECLARE(bonsai_bow);
+LV_IMG_DECLARE(dungeon_wob);
+LV_IMG_DECLARE(enterprise_wob);
+LV_IMG_DECLARE(openworld_wob);
+LV_IMG_DECLARE(space_invaders_wob);
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
@@ -107,25 +112,20 @@ ZMK_DISPLAY_WIDGET_LISTENER(widget_peripheral_status, struct peripheral_status_s
                             output_status_update_cb, get_state)
 ZMK_SUBSCRIPTION(widget_peripheral_status, zmk_split_peripheral_status_changed);
 
-#ifdef CONFIG_SHARP_MIP_ROTATE_180 // sets positions for default and flipped canvases
-int art_pos = 20;
-int top_pos = 0;
-#else
-int art_pos = 0;
-int top_pos = 92;
-#endif
-
 int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     widget->obj = lv_obj_create(parent);
     lv_obj_set_size(widget->obj, 160, 68);
     lv_obj_t *top = lv_canvas_create(widget->obj);
-    lv_obj_align(top, LV_ALIGN_TOP_LEFT, top_pos, 0);
+    lv_obj_align(top, LV_ALIGN_TOP_RIGHT, 0, 0);
     lv_canvas_set_buffer(top, widget->cbuf, CANVAS_SIZE, CANVAS_SIZE, LV_IMG_CF_TRUE_COLOR);
 
     lv_obj_t *art = lv_img_create(widget->obj);
-    bool random = sys_rand32_get() & 1;
-    lv_img_set_src(art, random ? &balloon : &mountain);
-    lv_obj_align(art, LV_ALIGN_TOP_LEFT, art_pos, 0);
+    static const lv_img_dsc_t *images[] = {
+        &acquario_bow, &atlas_wob, &bonsai_bow,
+        &dungeon_wob, &enterprise_wob, &openworld_wob, &space_invaders_wob,
+    };
+    lv_img_set_src(art, images[sys_rand32_get() % ARRAY_SIZE(images)]);
+    lv_obj_align(art, LV_ALIGN_TOP_LEFT, 0, 0);
 
     sys_slist_append(&widgets, &widget->node);
     widget_battery_status_init();
