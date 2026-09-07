@@ -26,10 +26,8 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 LV_IMG_DECLARE(acquario_bow);
 LV_IMG_DECLARE(atlas_wob);
 LV_IMG_DECLARE(bonsai_bow);
-LV_IMG_DECLARE(dungeon_wob);
 LV_IMG_DECLARE(enterprise_wob);
 LV_IMG_DECLARE(fuji);
-LV_IMG_DECLARE(openworld_wob);
 LV_IMG_DECLARE(space_invaders_wob);
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
