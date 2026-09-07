@@ -120,8 +120,7 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
 
     lv_obj_t *art = lv_img_create(widget->obj);
     static const lv_img_dsc_t *images[] = {
-        &acquario_bow, &atlas_wob, &bonsai_bow,
-        &dungeon_wob, &enterprise_wob, &fuji, &openworld_wob, &space_invaders_wob,
+        &acquario_bow, &atlas_wob, &bonsai_bow, &enterprise_wob, &fuji, &space_invaders_wob,
     };
     lv_img_set_src(art, images[sys_rand32_get() % ARRAY_SIZE(images)]);
     lv_obj_align(art, LV_ALIGN_TOP_LEFT, 0, 0);
