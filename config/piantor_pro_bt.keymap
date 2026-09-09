@@ -218,7 +218,7 @@
             display-name = "ARROWS";
             bindings = <
    &trans     &trans     &trans     &trans     &trans     &trans           &trans     &kp IT_UGRV &kp IT_IGRV &kp IT_OGRV &trans    &m_tilde
-   &trans     &trans     &trans     &trans     &trans     &trans           &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp K_MUTE &trans
+   &trans     &trans     &trans     &trans     &trans     &trans           &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp C_MUTE &trans
    &trans     &trans     &trans     &trans     &trans     &trans           &trans     &trans     &trans     &trans     &trans     &trans
                                     &trans     &trans     &trans           &trans     &trans     &trans
             >;
