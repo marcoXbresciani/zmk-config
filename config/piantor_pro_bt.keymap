@@ -207,120 +207,120 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-   &kp TAB    &kp Q      &kp W      &kp E       &kp R      &kp T            &kp Y      &kp U      &kp I      &kp O      &kp P      &kp IT_APOS
-   &kp LCTRL  &kp A      &kp S      &kp D       &kp F      &kp G            &kp H      &kp J      &kp K      &kp L      &kp SNIP   &kp IT_PLUS
-   &td_lshft  &kp Z      &kp X      &kp C       &kp V      &kp B            &kp N      &kp M      &kp COMMA  &kp DOT    &kp IT_MINUS &td_rshft
-                                    &lt 5 LALT  &lt 3 DEL  &lt 1 SPACE      &lt 2 RET  &lt 4 BSPC &lt 6 ESC
+   &kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U       &kp I      &kp O    &kp P         &kp IT_APOS
+   &kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G        &kp H      &kp J       &kp K      &kp L    &kp SNIP      &kp IT_PLUS
+   &td_lshft  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N      &kp M       &kp COMMA  &kp DOT  &kp IT_MINUS  &td_rshft
+             &lt 5 LALT  &lt 3 DEL  &lt 1 SPACE        &lt 2 RET  &lt 4 BSPC  &lt 6 ESC
             >;
         };
 
         layer_1 {
             display-name = "ARROWS";
             bindings = <
-   &trans     &trans     &trans     &trans     &trans     &trans           &trans     &kp IT_UGRV &kp IT_IGRV &kp IT_OGRV &trans    &m_tilde
-   &trans     &trans     &trans     &trans     &trans     &trans           &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp C_MUTE &trans
-   &trans     &trans     &trans     &trans     &trans     &trans           &trans     &trans     &trans     &trans     &trans     &trans
-                                    &trans     &trans     &trans           &trans     &trans     &trans
+   &trans  &trans  &trans  &trans  &trans  &trans        &trans    &kp IT_UGRV  &kp IT_IGRV  &kp IT_OGRV  &trans      &m_tilde
+   &trans  &trans  &trans  &trans  &trans  &trans        &kp LEFT  &kp DOWN     &kp UP       &kp RIGHT    &kp C_MUTE  &trans
+   &trans  &trans  &trans  &trans  &trans  &trans        &trans    &trans       &trans       &trans       &trans      &trans
+                           &trans  &trans  &trans        &trans    &trans       &trans
             >;
         };
 
         layer_2 {
             display-name = "SYMBOLS";
             bindings = <
-   &kp LGUI    &kp IT_AT   &kp IT_HASH &kp IT_EGRV &trans      &trans              &trans      &trans      &trans      &trans      &trans      &trans
-   &trans      &kp IT_AGRV &trans      &trans      &trans      &trans              &trans      &trans      &trans      &trans      &trans      &trans
-   &trans      &kp IT_LT  &kp IT_BKSL &kp IT_EUR &trans  &trans           &trans     &trans     &trans     &trans     &trans     &trans
-                                    &trans     &kp INS    &trans           &trans     &trans     &trans
+   &kp LGUI  &kp IT_AT    &kp IT_HASH  &kp IT_EGRV  &trans   &trans        &trans  &trans  &trans  &trans  &trans  &trans
+   &trans    &kp IT_AGRV  &trans       &trans       &trans   &trans        &trans  &trans  &trans  &trans  &trans  &trans
+   &trans    &kp IT_LT    &kp IT_BKSL  &kp IT_EUR   &trans   &trans        &trans  &trans  &trans  &trans  &trans  &trans
+                                       &trans       &kp INS  &trans        &trans  &trans  &trans
             >;
         };
 
         layer_3 {
             display-name = "PAGES";
             bindings = <
-   &trans      &trans      &trans      &trans      &trans      &trans              &trans      &m_u_grv    &m_i_grv    &m_o_grv    &trans      &m_grave
-   &trans     &trans     &trans     &trans     &trans     &trans           &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp MMUT   &trans
-   &trans     &trans     &trans     &trans     &trans     &trans           &trans     &trans     &trans     &trans     &trans     &trans
-                                    &trans     &trans     &trans           &trans     &trans     &trans
+   &trans  &trans  &trans  &trans  &trans  &trans        &trans    &m_u_grv   &m_i_grv   &m_o_grv  &trans    &m_grave
+   &trans  &trans  &trans  &trans  &trans  &trans        &kp HOME  &kp PG_DN  &kp PG_UP  &kp END   &kp MMUT  &trans
+   &trans  &trans  &trans  &trans  &trans  &trans        &trans    &trans     &trans     &trans    &trans    &trans
+                           &trans  &trans  &trans        &trans    &trans     &trans
             >;
         };
 
         layer_4 {
             display-name = "NUMS";
             bindings = <
-   &trans     &kp N0     &kp N1     &kp N2     &kp N3     &trans           &trans     &trans     &trans     &trans     &trans     &trans
-   &trans      &m_a_grv    &kp N4      &kp N5      &kp N6      &trans              &trans      &trans      &trans      &trans      &trans      &trans
-   &trans     &trans     &kp N7     &kp N8     &kp N9     &trans           &trans     &trans     &trans     &trans     &trans     &trans
-                                    &trans     &trans     &trans           &trans     &trans     &trans
+   &trans  &kp N0    &kp N1  &kp N2  &kp N3  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+   &trans  &m_a_grv  &kp N4  &kp N5  &kp N6  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+   &trans  &trans    &kp N7  &kp N8  &kp N9  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+                             &trans  &trans  &trans        &trans  &trans  &trans
             >;
         };
 
         layer_5 {
             display-name = "BRACKS";
             bindings = <
-   &trans      &trans      &trans      &trans      &trans      &trans              &trans      &em_u_grv   &em_i_grv   &em_o_grv   &trans      &em_tilde
-   &trans     &trans     &trans     &trans     &trans     &trans           &kp IT_LCBR &kp IT_LBKT &kp IT_RBKT &kp IT_RCBR &kp IME    &trans
-   &trans     &trans     &trans     &trans     &trans     &trans           &trans     &trans     &trans     &trans     &trans     &trans
-                                    &trans     &trans     &trans           &trans     &trans     &trans
+   &trans  &trans  &trans  &trans  &trans  &trans        &trans       &em_u_grv    &em_i_grv    &em_o_grv    &trans   &em_tilde
+   &trans  &trans  &trans  &trans  &trans  &trans        &kp IT_LCBR  &kp IT_LBKT  &kp IT_RBKT  &kp IT_RCBR  &kp IME  &trans
+   &trans  &trans  &trans  &trans  &trans  &trans        &trans       &trans       &trans       &trans       &trans   &trans
+                           &trans  &trans  &trans        &trans       &trans       &trans
             >;
         };
 
         layer_6 {
             display-name = "FKEYS";
             bindings = <
-   &trans     &trans     &kp F1     &kp F2     &kp F3     &kp F10          &trans     &trans     &trans     &trans     &trans     &trans
-   &trans      &em_a_grv   &kp F4      &kp F5      &kp F6      &kp F11             &trans      &trans      &trans      &trans      &trans      &trans
-   &trans     &trans     &kp F7     &kp F8     &kp F9     &kp F12          &trans     &trans     &trans     &trans     &trans     &trans
-                                    &trans     &trans     &trans           &trans     &trans     &trans
+   &trans  &trans     &kp F1  &kp F2  &kp F3  &kp F10        &trans  &trans  &trans  &trans  &trans  &trans
+   &trans  &em_a_grv  &kp F4  &kp F5  &kp F6  &kp F11        &trans  &trans  &trans  &trans  &trans  &trans
+   &trans  &trans     &kp F7  &kp F8  &kp F9  &kp F12        &trans  &trans  &trans  &trans  &trans  &trans
+                               &trans  &trans  &trans        &trans  &trans  &trans
             >;
         };
 
         layer_7 {
             display-name = "BT";
             bindings = <
-   &trans      &trans      &trans      &trans      &trans      &trans              &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &em_grave
-   &trans     &trans     &trans     &trans     &trans     &trans           &trans     &trans     &trans     &trans     &trans     &trans
-   &trans     &trans     &trans     &trans     &trans     &trans           &trans     &trans     &trans     &trans     &studio_unlock &rgb_ug RGB_TOG
-                                    &trans     &trans     &trans           &bt BT_CLR &sys_reset &bootloader
+   &trans  &trans  &trans  &trans  &trans  &trans        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &em_grave
+   &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans        &trans          &trans
+   &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans        &studio_unlock  &rgb_ug RGB_TOG
+                           &trans  &trans  &trans        &bt BT_CLR    &bootloader   &sys_reset
             >;
         };
 
         layer_8 {
             display-name = "UP_EGRV";
             bindings = <
-   &trans     &trans     &trans     &m_e_grv   &trans     &trans           &trans     &trans     &trans     &trans     &trans     &trans
-   &trans      &trans      &trans      &trans      &trans      &trans              &trans      &trans      &trans      &trans      &trans      &trans
-   &trans     &trans     &trans     &trans     &trans     &trans           &trans     &trans     &trans     &trans     &trans     &trans
-                                    &trans     &trans     &trans           &trans     &trans     &trans
+   &trans  &trans  &trans  &m_e_grv  &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+   &trans  &trans  &trans  &trans    &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+   &trans  &trans  &trans  &trans    &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+                             &trans  &trans  &trans        &trans  &trans  &trans
             >;
         };
 
         layer_9 {
             display-name = "UP_EACU";
             bindings = <
-   &trans      &trans      &trans      &m_e_acu    &trans      &trans              &trans      &trans      &trans      &trans      &trans      &trans
-   &trans     &trans     &trans     &trans     &trans     &trans           &trans     &trans     &trans     &trans     &trans     &trans
-   &trans     &trans     &trans     &trans     &trans     &trans           &trans     &trans     &trans     &trans     &trans     &trans
-                                    &trans     &trans     &trans           &trans     &trans     &trans
+   &trans  &trans  &trans  &m_e_acu  &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+   &trans  &trans  &trans  &trans    &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+   &trans  &trans  &trans  &trans    &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+                             &trans  &trans  &trans        &trans  &trans  &trans
             >;
         };
 
         layer_10 {
             display-name = "UP_E_EGRV";
             bindings = <
-   &trans      &trans      &trans      &em_e_grv   &trans      &trans              &trans      &trans      &trans      &trans      &trans      &trans
-   &trans     &trans     &trans     &trans     &trans     &trans           &trans     &trans     &trans     &trans     &trans     &trans
-   &trans     &trans     &trans     &trans     &trans     &trans           &trans     &trans     &trans     &trans     &trans     &trans
-                                    &trans     &trans     &trans           &trans     &trans     &trans
+   &trans  &trans  &trans  &em_e_grv  &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+   &trans  &trans  &trans  &trans     &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+   &trans  &trans  &trans  &trans     &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans  &trans  &trans        &trans  &trans  &trans
             >;
         };
 
         layer_11 {
             display-name = "UP_E_EACU";
             bindings = <
-   &trans      &trans      &trans      &em_e_acu   &trans      &trans              &trans      &trans      &trans      &trans      &trans      &trans
-   &trans     &trans     &trans     &trans     &trans     &trans           &trans     &trans     &trans     &trans     &trans     &trans
-   &trans     &trans     &trans     &trans     &trans     &trans           &trans     &trans     &trans     &trans     &trans     &trans
-                                    &trans     &trans     &trans           &trans     &trans     &trans
+   &trans  &trans  &trans  &em_e_acu  &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+   &trans  &trans  &trans  &trans     &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+   &trans  &trans  &trans  &trans     &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+                               &trans  &trans &trans        &trans  &trans  &trans
             >;
         };
     };
