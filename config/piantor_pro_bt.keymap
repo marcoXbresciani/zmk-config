@@ -254,8 +254,8 @@
             >;
         };
 
-        BRACKETS {
-            display-name = "BRACKETS";
+        BRACKET {
+            display-name = "BRACKET";
             bindings = <
    &trans  &trans  &trans  &trans  &trans  &trans        &trans       &em_u_grv    &em_i_grv    &em_o_grv    &trans   &em_tilde
    &trans  &trans  &trans  &trans  &trans  &trans        &kp IT_LCBR  &kp IT_LBKT  &kp IT_RBKT  &kp IT_RCBR  &kp IME  &trans
