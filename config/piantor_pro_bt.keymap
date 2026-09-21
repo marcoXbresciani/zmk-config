@@ -204,7 +204,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        QWERTY {
             display-name = "QWERTY";
             bindings = <
    &kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U       &kp I      &kp O    &kp P         &kp IT_APOS
@@ -214,7 +214,7 @@
             >;
         };
 
-        layer_1 {
+        ARROWS {
             display-name = "ARROWS";
             bindings = <
    &trans  &trans  &trans  &trans  &trans  &trans        &trans    &kp IT_UGRV  &kp IT_IGRV  &kp IT_OGRV  &trans      &m_tilde
@@ -224,8 +224,8 @@
             >;
         };
 
-        layer_2 {
-            display-name = "SYMBOLS";
+        SYMBOL {
+            display-name = "SYMBOL";
             bindings = <
    &kp LGUI  &kp IT_AT    &kp IT_HASH  &kp IT_EGRV  &trans   &trans        &trans  &trans  &trans  &trans  &trans  &trans
    &trans    &kp IT_AGRV  &trans       &trans       &trans   &trans        &trans  &trans  &trans  &trans  &trans  &trans
@@ -234,7 +234,7 @@
             >;
         };
 
-        layer_3 {
+        PAGES {
             display-name = "PAGES";
             bindings = <
    &trans  &trans  &trans  &trans  &trans  &trans        &trans    &m_u_grv   &m_i_grv   &m_o_grv  &trans    &m_grave
@@ -244,8 +244,8 @@
             >;
         };
 
-        layer_4 {
-            display-name = "NUMS";
+        NUMBER {
+            display-name = "NUMBER";
             bindings = <
    &trans  &kp N0    &kp N1  &kp N2  &kp N3  &trans        &trans  &trans  &trans  &trans  &trans  &trans
    &trans  &m_a_grv  &kp N4  &kp N5  &kp N6  &trans        &trans  &trans  &trans  &trans  &trans  &trans
@@ -254,8 +254,8 @@
             >;
         };
 
-        layer_5 {
-            display-name = "BRACKS";
+        BRACKETS {
+            display-name = "BRACKETS";
             bindings = <
    &trans  &trans  &trans  &trans  &trans  &trans        &trans       &em_u_grv    &em_i_grv    &em_o_grv    &trans   &em_tilde
    &trans  &trans  &trans  &trans  &trans  &trans        &kp IT_LCBR  &kp IT_LBKT  &kp IT_RBKT  &kp IT_RCBR  &kp IME  &trans
@@ -264,7 +264,7 @@
             >;
         };
 
-        layer_6 {
+        FKEYS {
             display-name = "FKEYS";
             bindings = <
    &trans  &trans     &kp F1  &kp F2  &kp F3  &kp F10        &trans  &trans  &trans  &trans  &trans  &trans
@@ -274,7 +274,7 @@
             >;
         };
 
-        layer_7 {
+        BT {
             display-name = "BT";
             bindings = <
    &trans  &trans  &trans  &trans  &trans  &trans        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &em_grave
@@ -284,8 +284,8 @@
             >;
         };
 
-        layer_8 {
-            display-name = "UP_EGRV";
+        U_EGRV {
+            display-name = "U_EGRV";
             bindings = <
    &trans  &trans  &trans  &m_e_grv  &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
    &trans  &trans  &trans  &trans    &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
@@ -294,8 +294,8 @@
             >;
         };
 
-        layer_9 {
-            display-name = "UP_EACU";
+        U_EACU {
+            display-name = "U_EACU";
             bindings = <
    &trans  &trans  &trans  &m_e_acu  &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
    &trans  &trans  &trans  &trans    &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
@@ -304,8 +304,8 @@
             >;
         };
 
-        layer_10 {
-            display-name = "UP_E_EGRV";
+        UE_EGRV {
+            display-name = "UE_EGRV";
             bindings = <
    &trans  &trans  &trans  &em_e_grv  &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
    &trans  &trans  &trans  &trans     &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
@@ -314,8 +314,8 @@
             >;
         };
 
-        layer_11 {
-            display-name = "UP_E_EACU";
+        UE_EACU {
+            display-name = "UE_EACU";
             bindings = <
    &trans  &trans  &trans  &em_e_acu  &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
    &trans  &trans  &trans  &trans     &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
