@@ -18,10 +18,15 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 #include <zmk/events/battery_state_changed.h>
 #include <zmk/split/bluetooth/peripheral.h>
 #include <zmk/events/split_peripheral_status_changed.h>
+#include <zmk/events/hid_indicators_changed.h>
+#include <zmk/hid_indicators.h>
 #include <zmk/usb.h>
 #include <zmk/ble.h>
 
 #include "peripheral_status.h"
+
+// Bit position of Caps Lock in the HID LED indicators report.
+#define LED_CAPS_LOCK 0x02
 
 LV_IMG_DECLARE(acquario_bow);
 LV_IMG_DECLARE(atlas_wob);
@@ -41,6 +46,8 @@ static void draw_top(lv_obj_t *widget, lv_color_t cbuf[], const struct status_st
 
     lv_draw_label_dsc_t label_dsc;
     init_label_dsc(&label_dsc, LVGL_FOREGROUND, &lv_font_montserrat_16, LV_TEXT_ALIGN_RIGHT);
+    lv_draw_label_dsc_t label_dsc_caps;
+    init_label_dsc(&label_dsc_caps, LVGL_FOREGROUND, &lv_font_montserrat_16, LV_TEXT_ALIGN_CENTER);
     lv_draw_rect_dsc_t rect_black_dsc;
     init_rect_dsc(&rect_black_dsc, LVGL_BACKGROUND);
 
@@ -49,6 +56,9 @@ static void draw_top(lv_obj_t *widget, lv_color_t cbuf[], const struct status_st
 
     // Draw battery
     draw_battery(canvas, state);
+
+    // Draw Caps Lock status, between the battery and the output status
+    lv_canvas_draw_text(canvas, 34, 0, 13, &label_dsc_caps, state->caps_lock ? "A" : "a");
 
     // Draw output status
     lv_canvas_draw_text(canvas, 0, 0, CANVAS_SIZE, &label_dsc,
@@ -95,6 +105,33 @@ static struct peripheral_status_state get_state(const zmk_event_t *_eh) {
     return (struct peripheral_status_state){.connected = zmk_split_bt_peripheral_is_connected()};
 }
 
+struct caps_lock_status_state {
+    bool caps_lock;
+};
+
+static void set_caps_lock_status(struct zmk_widget_status *widget,
+                                  struct caps_lock_status_state state) {
+    widget->state.caps_lock = state.caps_lock;
+
+    draw_top(widget->obj, widget->cbuf, &widget->state);
+}
+
+static void caps_lock_status_update_cb(struct caps_lock_status_state state) {
+    struct zmk_widget_status *widget;
+    SYS_SLIST_FOR_EACH_CONTAINER(&widgets, widget, node) { set_caps_lock_status(widget, state); }
+}
+
+static struct caps_lock_status_state caps_lock_status_get_state(const zmk_event_t *eh) {
+    const struct zmk_hid_indicators_changed *ev = as_zmk_hid_indicators_changed(eh);
+
+    return (struct caps_lock_status_state){
+        .caps_lock = (ev != NULL) && (ev->indicators & LED_CAPS_LOCK)};
+}
+
+ZMK_DISPLAY_WIDGET_LISTENER(widget_caps_lock_status, struct caps_lock_status_state,
+                            caps_lock_status_update_cb, caps_lock_status_get_state)
+ZMK_SUBSCRIPTION(widget_caps_lock_status, zmk_hid_indicators_changed);
+
 static void set_connection_status(struct zmk_widget_status *widget,
                                   struct peripheral_status_state state) {
     widget->state.connected = state.connected;
@@ -128,6 +165,7 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     sys_slist_append(&widgets, &widget->node);
     widget_battery_status_init();
     widget_peripheral_status_init();
+    widget_caps_lock_status_init();
 
     return 0;
 }
