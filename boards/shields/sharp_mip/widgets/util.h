@@ -28,7 +28,6 @@ struct status_state {
     uint8_t wpm[10];
 #else
     bool connected;
-    bool caps_lock;
 #endif
 };
 
